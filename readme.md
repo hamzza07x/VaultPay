@@ -25,7 +25,7 @@ Page HTML files are thin shells; `script.js` renders the shared sidebar/header a
 cd VaultPay
 python3 -m http.server 8000    # open http://localhost:8000
 ```
-or VS Code Live Server. Needs internet for Chart.js, Lucide icons and the Inter font (CDN).
+or VS Code Live Server. Needs internet only for Chart.js and the Inter font (CDN); icons are inline SVG.
 
 ## Themes & data
 `data-theme="dark|light"` on `<html>`; saved in `vp_theme`, system preference on first visit. Demo data lives in `localStorage` key `vaultpay_v1` (not secure — never store real financial data). Restore sample data: Settings → Reset demo data.
